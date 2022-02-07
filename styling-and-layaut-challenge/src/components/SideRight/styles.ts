@@ -4,7 +4,7 @@ export const SideRight = styled.div`
   background: #F5F6FC;
   height: 100vh;
   width: 18rem;
-  padding: 2rem 12%;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +12,9 @@ export const SideRight = styled.div`
   overflow-Y: "auto";
   right: 0;
   top: 0;
+  .contSideRight {
+    margin: 0 11%;
+  }
 `;
 
 export const HeaderSideRight = styled.div`

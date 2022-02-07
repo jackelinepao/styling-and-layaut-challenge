@@ -9,19 +9,21 @@ export default function SideRight() {
   return (
     <div>
       <S.SideRight>
-        <div>
-          <S.HeaderSideRight>
-            <div className='rightNav'>
-          <ul>
-          <li>
-              <Link to="" className='square'></Link>
-            </li>
-            <li>
-              <Link to="" className='square'></Link>
-            </li>
-          </ul>
-        </div>
-          </S.HeaderSideRight>
+        <div className='contSideRight'>
+          <div>
+            <S.HeaderSideRight>
+              <div className='rightNav'>
+                <ul>
+                  <li>
+                    <Link to="" className='square'></Link>
+                  </li>
+                  <li>
+                    <Link to="" className='square'></Link>
+                  </li>
+                </ul>
+              </div>
+            </S.HeaderSideRight>
+          </div>
         </div>
       </S.SideRight>
     </div>

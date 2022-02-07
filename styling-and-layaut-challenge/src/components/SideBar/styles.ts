@@ -82,7 +82,7 @@ export const ContCkeckboxes = styled.div`
   background: ${props => props.theme.colors.gray};
   border-radius: 9px;
   padding: 1.5rem 1rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
   position: relative;
   &:after {
     position: absolute;
