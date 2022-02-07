@@ -34,6 +34,7 @@ export const ContCard = styled.div`
     }
   }
 `;
+
 export const SquareOrange = styled.div`
   width: 1.92rem;
   height: 1.6rem;

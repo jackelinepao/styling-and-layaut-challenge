@@ -78,6 +78,7 @@ export const ContNav = styled.div`
     }
   }
 `
+
 export const ContCkeckboxes = styled.div`
   background: ${props => props.theme.colors.gray};
   border-radius: 9px;
@@ -117,7 +118,7 @@ export const ContCkeckboxes = styled.div`
       padding: 0;
     }
     & + label:before {
-      content: '';
+      content: "";
       margin-right: .6rem;
       display: inline-block;
       vertical-align: text-top;
@@ -145,7 +146,7 @@ export const ContCkeckboxes = styled.div`
       background: #ddd;
     }
     &:checked + label:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 4px;
       top: 8px;
@@ -208,5 +209,4 @@ export const ContButton = styled.div`
       }
     }
   }
-
 `;

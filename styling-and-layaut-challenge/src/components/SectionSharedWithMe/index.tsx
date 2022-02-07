@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CardShared from '../CardShared';
+import React from "react";
+
+import { Link } from "react-router-dom";
+import CardShared from "../CardShared";
 
 import * as S from "./styles";
 
@@ -29,12 +30,12 @@ export default function SectionSharedWithMe() {
 
   return (
     <div>
-      <S.TitleSection className='title'>
+      <S.TitleSection className="title">
         <h2>Share with me</h2>
-        <div className='rightNav'>
+        <div className="rightNav">
           <ul>
             <li>
-              <Link to="" className='linkViewAll'>View All</Link>
+              <Link to="" className="linkViewAll">View All</Link>
             </li>
           </ul>
         </div>

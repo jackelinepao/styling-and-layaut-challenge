@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPlus } from "@fortawesome/free-solid-svg-icons"
+
 import * as S from "./styles";
-import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 export default function SideBar() {
   return (
@@ -14,36 +16,36 @@ export default function SideBar() {
             <ul>
               <li>
                 <NavLink to="/">
-                  <div className='square'></div>
+                  <div className="square"></div>
                   <span>Home</span>
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/my-files">
-                  <div className='square'></div>
+                  <div className="square"></div>
                   <span>My Files</span>
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/recet-files">
-                  <div className='square'></div>
+                  <div className="square"></div>
                   <span>Recent Files</span>
                 </NavLink>
               </li>
               <li><NavLink to="/shared-filed">
-                <div className='square'></div>
+                <div className="square"></div>
                 <span>Shared Filed</span>
               </NavLink>
               </li>
               <li>
                 <NavLink to="/file-request">
-                  <div className='square'></div>
+                  <div className="square"></div>
                   <span>File Request</span>
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/trash">
-                  <div className='square'></div>
+                  <div className="square"></div>
                   <span>Trash</span>
                 </NavLink>
               </li>
@@ -54,7 +56,7 @@ export default function SideBar() {
           <S.ContCkeckboxes>
             <ul className="contBoxCheckbox">
               <li>
-                <input className="styled-checkbox" id="checkbox-1" type="checkbox" value="value1"/>
+                <input className="styled-checkbox" id="checkbox-1" type="checkbox" value="value1" />
                 <label htmlFor="checkbox-1"><span>Checkbox</span></label>
               </li>
               <li>
@@ -73,8 +75,8 @@ export default function SideBar() {
           </S.ContCkeckboxes>
           <S.ContButton>
             <button>
-              <div className='textButton'>Create New</div>
-              <div className='icon'><FontAwesomeIcon icon={faPlus} /></div>
+              <div className="textButton">Create New</div>
+              <div className="icon"><FontAwesomeIcon icon={faPlus} /></div>
             </button>
           </S.ContButton>
         </S.SectionButtomSidebar>
