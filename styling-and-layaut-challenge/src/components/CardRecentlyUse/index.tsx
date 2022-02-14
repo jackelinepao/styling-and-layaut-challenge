@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEllipsisV } from "@fortawesome/free-solid-svg-icons"
 
-import * as S from "./styles";
+import { ContCard, BoxFlexbox, TextDate, SquareOrange, Circle, NumCircle, ContCircles, ButtomEdit, TitleCard } from "./styles";
 
 interface ICard {
   numCircles: number,
@@ -12,31 +12,36 @@ interface ICard {
   date: string,
 }
 
-export default function CardRecentlyUse(items: { items: ICard }) {
-
+export default function CardRecentlyUse({items:{numCircles, number, title, date}}:{items: ICard}) {
   return (
-    <S.ContCard>
+    <ContCard>
       <div>
-        <div className='flexBox'>
-          <S.SquareOrange></S.SquareOrange>
-          <S.ContCircles>
-            {[...Array(items.items.numCircles)].map((e, i) => (
-              items.items.numCircles - 1 > i ?
-                <S.Circle key={i}></S.Circle> : (
-                  <S.Circle key={i}>
-                    <span>{items.items.number}</span>
-                  </S.Circle>
+        <BoxFlexbox>
+          <SquareOrange></SquareOrange>
+          <ContCircles>
+            {[...Array(numCircles)].map((e, i) => (
+              numCircles - 1 > i ?
+                <Circle key={i}></Circle> : (
+                  <Circle key={i}>
+                    <NumCircle>
+                      {number}
+                    </NumCircle>
+                  </Circle>
                 )))}
-          </S.ContCircles>
-        </div>
+          </ContCircles>
+        </BoxFlexbox>
         <div>
-          <h4>{items.items.title}</h4>
-          <span className='date'>Created {items.items.date}</span>
+          <TitleCard>
+            {title}
+          </TitleCard>
+          <TextDate>
+            Created {date}
+          </TextDate>
         </div>
       </div>
-      <button className='btnEdit'>
+      <ButtomEdit>
         <FontAwesomeIcon icon={faEllipsisV} />
-      </button>      
-    </S.ContCard>
+      </ButtomEdit>
+    </ContCard>
   );
 }

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CardRecentlyUse from '../CardRecentlyUse';
-import Column from '../Column';
+import React from "react";
+
+import { Link } from "react-router-dom";
+import CardRecentlyUse from "../CardRecentlyUse";
+import Column from "../Column";
 
 import * as S from "./styles";
 import * as SC from "./../Column/styles";
@@ -37,19 +38,19 @@ export default function SectionRecentlyFiles() {
 
   return (
     <S.BoxSection>
-      <S.TitleSection className='title'>
+      <S.TitleSection className="title">
         <h2>Recently Files</h2>
-        <div className='rightNav'>
+        <div className="rightNav">
           <ul>
             <li>
-              <Link to="" className='linkViewAll'>View All</Link>
+              <Link to="" className="linkViewAll">View All</Link>
             </li>
           </ul>
         </div>
       </S.TitleSection>
       <S.Table>
         <SC.Column>
-          <div className='contColumn headerTable'>
+          <div className="contColumn headerTable">
             <div>
               <h4>Name</h4>
             </div>

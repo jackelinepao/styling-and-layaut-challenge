@@ -9,31 +9,18 @@ export const ContCard = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  .flexBox {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.8rem;
-  }
-  .date {
-    color: ${props => props.theme.colors.darkBlue};
-    font-size: .84rem;
-    margin-top: 1rem;
-  }
-  h4 {
-    margin-bottom: .5rem;
-  }
-  .btnEdit {
-    padding: 0;
-    background: transparent;
-    color: #C4C4C4;
-    margin-left: .5rem;
-    font-size: 1.1rem;
-    transition: .3s all;
-    &:hover {
-      color: ${props => props.theme.colors.orange};
-    }
-  }
 `;
+export const BoxFlexbox = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+`
+export const TextDate = styled.span`
+  color: ${props => props.theme.colors.darkBlue};
+  font-size: .84rem;
+  margin-top: 1rem;
+`
+
 export const SquareOrange = styled.div`
   width: 1.92rem;
   height: 1.6rem;
@@ -53,15 +40,30 @@ export const Circle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  span {
-    font-size: .62rem
-  }
   &:not(:first-child) {
     margin-left: -.5rem;
   }
 `;
-
+export const NumCircle = styled.span`
+  font-size: .62rem;
+`
 export const ContCircles = styled.div`
   display: flex;
-  color: ${props => props.theme.colors.dark}
+  color: ${props => props.theme.colors.dark};
 `;
+
+export const ButtomEdit = styled.button`
+  padding: 0;
+  background: transparent;
+  color: #C4C4C4;
+  margin-left: .5rem;
+  font-size: 1.1rem;
+  transition: .3s all;
+  &:hover {
+    color: ${props => props.theme.colors.orange};
+  }
+`
+
+export const TitleCard = styled.h4`
+  margin-bottom: .5rem;
+`

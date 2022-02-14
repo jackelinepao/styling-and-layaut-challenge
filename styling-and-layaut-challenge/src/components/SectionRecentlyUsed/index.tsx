@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CardRecentlyUse from '../CardRecentlyUse';
+import React from "react";
+
+import { Link } from "react-router-dom";
+import CardRecentlyUse from "../CardRecentlyUse";
 
 import * as S from "./styles";
 
@@ -29,15 +30,15 @@ export default function SectionRecentlyUsed() {
 
   return (
     <S.BoxSection>
-      <S.TitleSection className='title'>
+      <S.TitleSection className="title">
         <h2>Recently Used</h2>
-        <div className='rightNav'>
+        <div className="rightNav">
           <ul>
-          <li>
-              <Link to="" className='square active'></Link>
+            <li>
+              <Link to="" className="square active"></Link>
             </li>
             <li>
-              <Link to="" className='square'></Link>
+              <Link to="" className="square"></Link>
             </li>
           </ul>
         </div>
