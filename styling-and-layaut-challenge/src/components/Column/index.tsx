@@ -12,23 +12,23 @@ interface ICard {
   date: string,
 }
 
-export default function Column(items: { items: ICard }) {
+export default function Column({ items: { title, color, members, date } }: { items: ICard }) {
 
   return (
     <S.Column>
       <div className="contColumn">
         <div className="form-group">
-          <S.LabelCustom type="checkbox" id={items.items.title} color={items.items.color} />
-          <label htmlFor={items.items.title}></label>
+          <S.LabelCustom type="checkbox" id={title} color={color} />
+          <label htmlFor={title}></label>
         </div>
         <div>
-          <h4>{items.items.title}</h4>
+          <h4>{title}</h4>
         </div>
         <div>
-          <h5>{items.items.members} menbers</h5>
+          <h5>{members} menbers</h5>
         </div>
         <div>
-          <h5>{items.items.date}</h5>
+          <h5>{date}</h5>
         </div>
         <div>
           <button className="btnEdit">

@@ -9,7 +9,7 @@ interface ICard {
   date: string,
 }
 
-export default function CardShared(items: { items: ICard }) {
+export default function CardShared({ items: { numCircles, number, title, date } }: { items: ICard }) {
 
   return (
     <S.ContCard>
@@ -17,18 +17,18 @@ export default function CardShared(items: { items: ICard }) {
         <div className="flexBox">
           <S.SquareOrange></S.SquareOrange>
           <S.ContCircles>
-            {[...Array(items.items.numCircles)].map((e, i) => (
-              items.items.numCircles - 1 > i ?
+            {[...Array(numCircles)].map((e, i) => (
+              numCircles - 1 > i ?
                 <S.Circle key={i} className="borderColor" /> : (
                   <S.Circle key={i} className="borderColor">
-                    <span>{items.items.number}</span>
+                    <span>{number}</span>
                   </S.Circle>
                 )))}
           </S.ContCircles>
         </div>
         <div>
-          <h4>{items.items.title}</h4>
-          <span className="date">Created {items.items.date}</span>
+          <h4>{title}</h4>
+          <span className="date">Created {date}</span>
         </div>
       </div>
     </S.ContCard>

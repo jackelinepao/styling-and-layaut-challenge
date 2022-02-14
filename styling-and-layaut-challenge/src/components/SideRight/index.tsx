@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import TableSideRight from "../TableSideRight";
 
 import * as S from "./styles";
 
@@ -27,14 +28,15 @@ export default function SideRight() {
             </S.HeaderSideRight>
             <div>
               <h2>Storage</h2>
-              <S.BoxWhite>
-                <S.BoxColor />
-                <h4>Buy more space now!</h4>
-                <p>Upgrade to cloud premium</p>
-                <S.ContButton>
-                  <Link to="">Upgrade Account!</Link>
-                </S.ContButton>
-              </S.BoxWhite>
+            <TableSideRight />            
+            <S.BoxWhite>
+              <S.BoxColor />
+              <h4>Buy more space now!</h4>
+              <p>Upgrade to cloud premium</p>
+              <S.ContButton>
+                <Link to="">Upgrade Account!</Link>
+              </S.ContButton>
+            </S.BoxWhite>
             </div>
           </div>
         </div>
